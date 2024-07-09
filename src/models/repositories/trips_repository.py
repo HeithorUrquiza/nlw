@@ -5,7 +5,7 @@ class TripsRepository:
     def __init__(self, conn: Connection) -> None:
         self.__conn = conn
         
-    def create_trip(self, trips_info: Dict) -> None:
+    def create_trip(self, trip_infos: Dict) -> None:
         cursor = self.__conn.cursor()
         # Execute a SQL query string
         cursor.execute(
@@ -15,12 +15,12 @@ class TripsRepository:
                 VALUES
                     (?, ?, ?, ?, ?, ?)
             ''', (
-                trips_info["id"],
-                trips_info["destination"],
-                trips_info["start_date"],
-                trips_info["end_date"],
-                trips_info["owner_name"],
-                trips_info["owner_email"]
+                trip_infos["id"],
+                trip_infos["destination"],
+                trip_infos["start_date"],
+                trip_infos["end_date"],
+                trip_infos["owner_name"],
+                trip_infos["owner_email"]
             )
         )
         # Commit alteration in the DB
