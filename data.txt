@@ -1,0 +1,1 @@
+{'status': 'success', 'user': 'gfo5kigimwraqj5a@ethereal.email', 'pass': 'Wnt4vbSH9XM1ue1DFf', 'smtp': {'host': 'smtp.ethereal.email', 'port': 587, 'secure': False}, 'imap': {'host': 'imap.ethereal.email', 'port': 993, 'secure': True}, 'pop3': {'host': 'pop3.ethereal.email', 'port': 995, 'secure': True}, 'web': 'https://ethereal.email', 'mxEnabled': False}
